@@ -1,4 +1,6 @@
 EXTRA_DIST = Doxyfile.in README.win32 README.protocol README.config contrib UPGRADE docs win32
+#autoreconf 2.68 moans about this
+ACLOCAL_AMFLAGS=-I m4
 
 LIBTOOL += --quiet
 

@@ -18,6 +18,8 @@ AC_PROG_MAKE_SET
 AC_DISABLE_STATIC
 AC_LIBTOOL_DLOPEN
 AC_PROG_LIBTOOL
+#autoreconf 2.68 moans about it:
+AC_CONFIG_MACRO_DIR([m4])
 
 if test "x-$lt_cv_dlopen_libs" != "x-" ; then
     LIBS="$LIBS $lt_cv_dlopen_libs"
